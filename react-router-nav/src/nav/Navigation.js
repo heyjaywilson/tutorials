@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
@@ -11,13 +11,13 @@ class Navigation extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
           </ul>
         </nav>
